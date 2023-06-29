@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'privacy_policy.dart';
 import 'star_counter.dart';
 
 void main() {
@@ -20,7 +19,6 @@ class StarCounterApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => const HomePage(),
-        '/privacypolicy': (context) => const PrivacyPolicy(),
       },
     );
   }
