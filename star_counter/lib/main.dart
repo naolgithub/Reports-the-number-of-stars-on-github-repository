@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'star_counter.dart';
 
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                           MaterialStateProperty.all(Colors.transparent),
                     ),
                     onPressed: () =>
-                        Navigator.of(context).pushNamed('/privacypolicy'),
+                        launchUrl(Uri.parse('/privacy_policy.html')),
                     child: const Text('Privacy Policy'),
                   ),
                 ],
